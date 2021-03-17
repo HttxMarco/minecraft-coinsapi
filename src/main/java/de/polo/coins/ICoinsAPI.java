@@ -10,6 +10,15 @@ public interface ICoinsAPI {
 
     boolean removeProfile(UUID uuid);
 
+    void addProfileAtCache(UUID uuid, int coins);
+
+    void removeProfileAtCache(UUID uuid);
+
+    void updateProfile(UUID uuid, int coins);
+
+    int getCoins();
+
+    int getCoinsFromDatabase();
 
 
 }
