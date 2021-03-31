@@ -1,0 +1,4 @@
+name: CoinsAPi
+version: 1.0
+author: HttpMarco
+main: de.polo.coins.CoinsAPI

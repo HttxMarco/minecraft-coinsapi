@@ -32,5 +32,4 @@ public class CoinsDatabaseAdapter {
             return -1;
         }, -1);
     }
-
 }

@@ -29,13 +29,13 @@ public class HikariConfigBuilder {
     }
 
     private HikariConfig authentication(HikariConfig hikariConfig){
-        hikariConfig.setUsername("test");
-        hikariConfig.setPassword("test");
+        hikariConfig.setUsername("root");
+        hikariConfig.setPassword("password123");
         return hikariConfig;
     }
 
     public HikariConfig setConnectionArguments(HikariConfig hikariConfig){
-        hikariConfig.setJdbcUrl(String.format(CONNECT_ARGUMENTS, "", 3306, ""));
+        hikariConfig.setJdbcUrl(String.format(CONNECT_ARGUMENTS, "127.0.0.1", 3306, "polo123"));
         hikariConfig.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return hikariConfig;
     }
